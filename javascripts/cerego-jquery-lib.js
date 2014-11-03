@@ -85,5 +85,15 @@
       });
     });
   };
-})();
 
+  $.ajax({
+    type: "GET",
+    dataType: 'json',
+    url: "https://cerego.com/configuration"
+  }).done(function(data, textStatus, jqXHR) {
+    var token = data.token;
+    CeregoApi.apiKey(token);
+  }).fail(function(jqXHR, textStatus, errorThrown) {
+    alert("Failure to get configuration, bookmarklet will not work. Are you logged in to https://cerego.com/?");
+  });
+})();
