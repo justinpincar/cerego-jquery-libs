@@ -1,0 +1,78 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demo page for Cerego jQuery library</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+    <link rel="stylesheet" href="./css/blog.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="./javascripts/cerego-jquery-lib.js"></script>
+    <script src="./javascripts/cerego-bindings.js"></script>
+  </head>
+  <body>
+    <div id="layout" class="pure-g">
+      <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+          <h1 class="brand-title">Cerego jQuery</h1>
+          <h2 class="brand-tagline">Library functions for the Cerego.com API</h2>
+
+          <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+            <a class="pure-button" href="https://cerego.com">Cerego.com</a>
+            </li>
+          </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="content pure-u-1 pure-u-md-3-4">
+        <form class="pure-form pure-form-aligned">
+        <div>
+          <div class="posts">
+            <h1 class="content-subhead">Getting Started</h1>
+
+            <section class="post">
+            <header class="post-header">
+
+            <h2 class="post-title">The Basics</h2>
+
+            <div class="post-description">
+              <p>
+              All Cerego.com API requests require a valid API key.<br />
+              <br />
+              Cerego API Key: <input id="cerego-api-key" type="text" />
+              <br />
+              <br />
+              <h4>Get Profile</h4>
+              <div class="pure-controls">
+                <button id="profile-get" class="pure-button pure-button-primary">Get</button>
+              </div>
+              <br />
+
+              <h4>Set Creation</h4>
+              <div class="pure-control-group">
+                <label for="set-create-name">Name</label>
+                <input id="set-create-name" type="text" />
+              </div>
+              <div class="pure-control-group">
+                <label for="set-create-description">Description</label>
+                <input id="set-create-description" type="text" />
+              </div>
+              <div class="pure-controls">
+                <button id="set-create" class="pure-button pure-button-primary">Create</button>
+              </div>
+
+              </p>
+            </div>
+            </section>
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
